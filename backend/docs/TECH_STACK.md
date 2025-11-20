@@ -10,9 +10,8 @@ Based on **Armin Ronacher's Agentic Coding Recommendations**, we prioritize simp
   - *Reason*: Go 1.22+ has a powerful router. Using the standard library avoids framework "magic" and dependency churn, aligning with the "dumbest possible thing" philosophy.
 - **Database**: **SQLite**
   - *Reason*: **User Request**. Simple, file-based, no external dependencies (Docker not required). Ideal for "Simple Code" philosophy.
-- **Database Interaction**: **`modernc.org/sqlite` (Pure Go)**
+- **Database Interaction**: **`modernc.org/sqlite` (v1.34.0)**
   - *Reason*: CGO-free, easy to cross-compile, agent-friendly.
-  - *Methodology*: **Raw SQL**. No ORMs. Explicit SQL queries.
   - *Methodology*: **Raw SQL**. No ORMs (GORM, etc.). Agents write excellent SQL. We will use explicit SQL queries for maximum clarity and control.
 
 ## 2. Development Tools
