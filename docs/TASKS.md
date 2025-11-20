@@ -24,9 +24,9 @@ This document outlines the step-by-step tasks for implementing the RealWorld app
   - [ ] Create a basic "Hello World" page.
 
 - [ ] **Database Setup**
-  - [ ] Install PostgreSQL (if not already available).
-  - [ ] Create database `realworld`.
-  - [ ] Set up migration tool (e.g., `golang-migrate` or simple SQL scripts).
+  - [ ] Configure SQLite (File-based).
+  - [ ] Create database schema (`realworld.db`).
+  - [ ] Set up migration tool (SQL scripts).
 
 ## Phase 2: Backend Implementation (Core)
 

@@ -16,5 +16,5 @@ Detailed documentation for each part of the stack can be found in their respecti
 
 ## Tech Stack Overview
 
-- **Backend**: Go 1.25.4, PostgreSQL 18.1, pgx (No ORM)
+- **Backend**: Go 1.25.4, SQLite (Embedded), modernc.org/sqlite (No ORM)
 - **Frontend**: React 19.2.0, Vite 6, Node.js 24 LTS

@@ -8,10 +8,11 @@ Based on **Armin Ronacher's Agentic Coding Recommendations**, we prioritize simp
   - *Benefits*: Static typing, simplicity, explicit error handling, fast compilation, and stability. Agents handle Go's "boring" and explicit nature very well.
 - **Web Framework**: **Standard Library (`net/http`)**
   - *Reason*: Go 1.22+ has a powerful router. Using the standard library avoids framework "magic" and dependency churn, aligning with the "dumbest possible thing" philosophy.
-- **Database**: **PostgreSQL 18.1**
-  - *Reason*: Latest stable production release (Nov 2025).
-- **Database Interaction**: **`pgx` (Jackc/pgx) v5+**
-  - *Reason*: High-performance, pure Go driver.
+- **Database**: **SQLite**
+  - *Reason*: **User Request**. Simple, file-based, no external dependencies (Docker not required). Ideal for "Simple Code" philosophy.
+- **Database Interaction**: **`modernc.org/sqlite` (Pure Go)**
+  - *Reason*: CGO-free, easy to cross-compile, agent-friendly.
+  - *Methodology*: **Raw SQL**. No ORMs. Explicit SQL queries.
   - *Methodology*: **Raw SQL**. No ORMs (GORM, etc.). Agents write excellent SQL. We will use explicit SQL queries for maximum clarity and control.
 
 ## 2. Development Tools
