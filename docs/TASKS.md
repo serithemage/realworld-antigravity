@@ -4,27 +4,27 @@ This document outlines the step-by-step tasks for implementing the RealWorld app
 
 ## Phase 1: Project Initialization & Setup
 
-- [ ] **Repository Setup**
+- [x] **Repository Setup** ✅ *Closed: Issue #1*
   - [x] Initialize Git repository.
   - [x] Create `README.md` for root, backend, and frontend.
   - [x] Define Tech Stack & PRD.
-  - [ ] Create `docs/TASKS.md` (This file).
+  - [x] Create `docs/TASKS.md` (This file).
 
-- [ ] **Backend Setup (Go)**
-  - [ ] Initialize Go module (`go mod init`).
-  - [ ] Set up project structure (`cmd/`, `internal/`, `pkg/`).
-  - [ ] Install dependencies (`pgx`, `chi` or standard lib router wrapper if needed, `jwt-go` replacement).
-  - [ ] Configure `golangci-lint`.
-  - [ ] Create a simple "Hello World" HTTP server to verify setup.
+- [x] **Backend Setup (Go)** ✅ *Closed: Issue #2*
+  - [x] Initialize Go module (`go mod init`).
+  - [x] Set up project structure (`cmd/`, `internal/`, `pkg/`).
+  - [x] Install dependencies (SQLite: `modernc.org/sqlite`).
+  - [x] Configure `golangci-lint`.
+  - [x] Create a simple "Hello World" HTTP server to verify setup.
 
-- [ ] **Frontend Setup (React)**
-  - [ ] Initialize Vite project (`npm create vite@latest`).
-  - [ ] Install dependencies (`react-router-dom`, etc.).
-  - [ ] Set up ESLint & Prettier.
-  - [ ] Create a basic "Hello World" page.
+- [x] **Frontend Setup (React)** ✅ *Closed: Issue #3*
+  - [x] Initialize Vite project (`npm create vite@latest`).
+  - [x] Install dependencies (`react-router-dom`, etc.).
+  - [x] Set up ESLint & Prettier.
+  - [x] Create a basic "Hello World" page.
 
-- [ ] **Database Setup**
-  - [ ] Configure SQLite (File-based).
+- [/] **Database Setup** 🔄 *In Progress: Issue #4*
+  - [x] Configure SQLite (File-based).
   - [ ] Create database schema (`realworld.db`).
   - [ ] Set up migration tool (SQL scripts).
 
